@@ -36,7 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites', 
-    'unser_projekt.news',
+    'news',
     
 )
 
@@ -69,8 +69,8 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Europe/Berlin'
-#TIME_ZONE = 'UTC' # default
+#TIME_ZONE = 'Europe/Berlin'
+TIME_ZONE = 'UTC' # default
 
 USE_I18N = True
 
