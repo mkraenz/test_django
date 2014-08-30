@@ -17,6 +17,9 @@ class Meldung(models.Model):
     def __unicode__(self): 
         return self.text 
     
+    class Admin:
+        pass
+    
 class Kommentar(models.Model):
     
     news = models.ForeignKey(Meldung) 
@@ -25,3 +28,6 @@ class Kommentar(models.Model):
     
     def __unicode__(self): 
         return self.text 
+    
+    class Admin:
+        pass
