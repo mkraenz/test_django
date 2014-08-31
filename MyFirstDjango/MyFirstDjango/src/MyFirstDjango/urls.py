@@ -10,6 +10,8 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     
-    url(r'^meldungen/$', 'news.views.meldungen')
     
+    # urls for app "news"
+    url(r'^meldungen/$', 'news.views.meldungen'),
+    url(r'^meldungen/(?P<meldungs_id>\d+)/$', 'news.views.meldung_detail'),
 )
