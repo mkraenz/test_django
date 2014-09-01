@@ -24,6 +24,13 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+''' no longer neccessary since we created a templates package inside the news app, now all pathes are given relative to ....src/news/
+TEMPLATE_DIRS = (
+    "E:/git repository/test_django/MyFirstDjango/MyFirstDjango/src/template"
+) 
+'''
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
 ALLOWED_HOSTS = []
 
 

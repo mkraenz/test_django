@@ -12,6 +12,6 @@ urlpatterns = patterns('',
     
     
     # urls for app "news"
-    url(r'^meldungen/$', 'news.views.meldungen'),
-    url(r'^meldungen/(?P<meldungs_id>\d+)/$', 'news.views.meldung_detail'),
+    url(r'^meldungen/$', 'news.views.meldungen', name='meldungen'),
+    url(r'^meldungen/(?P<meldungs_id>\d+)/$', 'news.views.meldung_detail', name="meldung_details"),
 )
